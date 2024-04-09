@@ -1,5 +1,6 @@
 # minimal-torch-training
-A Minimal PyTorch training and testing framework
+A Minimal PyTorch training and testing framework for beginners.  
+适用于初学者的最简单PyTorch模型训练测试代码框架。
 
 
 ## 代码解读
