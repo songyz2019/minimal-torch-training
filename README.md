@@ -9,9 +9,10 @@ A Minimal PyTorch training and testing framework for beginners.
 每个过程由下面几个变量组成:
 1. `dataset`: 数据的来源,需要关心的是它的`train`参数,如果为`True`,表示读取训练集,否则为测试集。示例代码中用的是torchvision内置的MINIST数据集,如果要用非内置数据集,可以重载`torch.utils.Dataset`类实现  
 2. `dataloader`: 数据的读取方式,对于训练过程,我们需要将数据顺序打乱(`shuffle=True`), 并一组一组的读取数据(`batch_size=64`),测试过程则不需要
-3. `model`: 模型
-4. `loss`: 损失
-5. `optimizer`: 优化器,它根据`loss`优化`model`
+3. `model`: 模型, 这部分往往比较复杂,需要我们单独为其创建一个文件`model.py`
+4. `loss`: 损失, 衡量真值`y`和预测结果`y_hat`的差距
+5. `optimizer`: 优化器, 它根据`loss`优化`model`. 训练过程可以看作不断优化`model`的过程
+
 
 <!--
 ## Basic Deeplearning Engineering for Classification
